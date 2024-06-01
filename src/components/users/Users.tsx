@@ -1,13 +1,13 @@
 import { Container } from "@mui/material";
-import { FormContext } from "./FormContext.tsx";
+import { UserContext } from "../../context/UserContext.tsx";
 import UserForm from "./UserForm.tsx";
 
 export function Users() {
   return (
     <Container>
-      <FormContext>
+      <UserContext>
         <UserForm />
-      </FormContext>
+      </UserContext>
     </Container>
   );
 }

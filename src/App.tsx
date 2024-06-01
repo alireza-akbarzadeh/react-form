@@ -1,10 +1,5 @@
-import {Users} from "./components/Users.tsx";
+import { Users } from "./components/users/Users.tsx";
 
-export  function App() {
-
-  return (
-    <Users/>
-  )
+export function App() {
+  return <Users />;
 }
-
-

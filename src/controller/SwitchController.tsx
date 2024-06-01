@@ -10,15 +10,15 @@ export function SwitchController<TName extends FieldValues>(
   props: SwitchControllerProps<TName>,
 ) {
   const { name, label } = props;
-  const { control } = useFormContext<TName>();
+  const { control } = useFormContext();
   return (
     <Controller
-      control={control}
       name={name}
+      control={control}
       render={({ field }) => (
         <FormControlLabel
-          label={label}
           control={<Switch {...field} checked={field.value} />}
+          label={label}
         />
       )}
     />

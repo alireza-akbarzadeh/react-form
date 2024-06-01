@@ -11,7 +11,7 @@ import { DevTool } from "@hookform/devtools";
 type FormProps = {
   children?: ReactNode;
 };
-export const FormContext = (props: FormProps) => {
+export const UserContext = (props: FormProps) => {
   const { children } = props;
   const methods = useForm<UserSchemaType>({
     mode: "all",

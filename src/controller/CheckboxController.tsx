@@ -1,12 +1,12 @@
 import { Controller, FieldValues, Path, useFormContext } from "react-hook-form";
 import { Options } from "../types/options.ts";
 import {
+  Checkbox,
   FormControl,
   FormControlLabel,
   FormGroup,
-  FormLabel,
-  Checkbox,
   FormHelperText,
+  FormLabel,
 } from "@mui/material";
 
 type CheckboxControllerProps<TName extends FieldValues> = {
